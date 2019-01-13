@@ -1,0 +1,8 @@
+--2019-01-13 02:47:40--  https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/17309030_1123740431088540_2762932274365188509_n.png?_nc_cat=107
+Resolving scontent-mia3-2.xx.fbcdn.net (scontent-mia3-2.xx.fbcdn.net)... 157.240.14.19, 2a03:2880:f02c:112:face:b00c:0:3
+Connecting to scontent-mia3-2.xx.fbcdn.net (scontent-mia3-2.xx.fbcdn.net)|157.240.14.19|:443... connected.
+GnuTLS: Resource temporarily unavailable, try again.
+GnuTLS: Resource temporarily unavailable, try again.
+HTTP request sent, awaiting response... 403 Forbidden
+2019-01-13 02:47:41 ERROR 403: Forbidden.
+

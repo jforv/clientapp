@@ -1,5 +1,5 @@
 const Menu =  [
-  { header: 'Apps' },
+  { header: 'Menu' },
   {
     title: 'Dashboard',
     group: 'apps',
