@@ -31,9 +31,9 @@
                   <v-toolbar-side-icon></v-toolbar-side-icon>
                   <v-toolbar-title class="white--text">Title</v-toolbar-title>
                   <v-spacer></v-spacer>
-                  <v-btn icon>
+                  <!-- <v-btn icon>
                     <v-icon>search</v-icon>
-                  </v-btn>
+                  </v-btn> -->
                   <v-btn icon>
                     <v-icon>apps</v-icon>
                   </v-btn>
@@ -62,9 +62,9 @@
                   <v-toolbar-side-icon></v-toolbar-side-icon>
                   <v-toolbar-title class="white--text" slot="extension">Title</v-toolbar-title>
                   <v-spacer></v-spacer>
-                  <v-btn icon>
+                  <!-- <v-btn icon>
                     <v-icon>search</v-icon>
-                  </v-btn>
+                  </v-btn> -->
                   <v-btn icon>
                     <v-icon>apps</v-icon>
                   </v-btn>
@@ -91,9 +91,9 @@
                   <v-toolbar card prominent>
                     <v-toolbar-title class="body-2 grey--text">Title</v-toolbar-title>
                     <v-spacer></v-spacer>
-                    <v-btn icon>
+                    <!-- <v-btn icon>
                       <v-icon>search</v-icon>
-                    </v-btn>
+                    </v-btn> -->
                     <v-btn icon>
                       <v-icon>apps</v-icon>
                     </v-btn>

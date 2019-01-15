@@ -3,7 +3,7 @@
     <v-container grid-list-xl fluid>
       <v-layout row wrap>
         <!-- mini statistic start -->
-        <v-flex lg3 sm6 xs12>
+        <!-- <v-flex lg3 sm6 xs12>
           <mini-statistic
             icon="fa fa-facebook"
             title="100+"
@@ -38,7 +38,7 @@
             color="purple"      
           >
           </mini-statistic>             
-        </v-flex>   
+        </v-flex>    -->
         <!-- mini statistic  end -->   
         <v-flex lg8 sm12 xs12>
           <v-widget title="Site Traffic" content-bg="white">
@@ -92,10 +92,10 @@
           </v-widget>  
         </v-flex>
         <!-- social/weather card start -->
-        <v-flex lg4 sm12 xs12>
+        <!-- <v-flex lg4 sm12 xs12>
           <profile-card>
           </profile-card>
-        </v-flex>        
+        </v-flex>         -->
         <v-flex lg4 sm12 xs12>
           <box-chart
             card-color="indigo"
@@ -167,10 +167,10 @@
           </circle-statistic>            
         </v-flex>    
         <!-- acitivity/chat widget -->
-        <v-flex lg6 sm12 xs12>
+        <!-- <v-flex lg6 sm12 xs12>
           <chat-window height="308px"></chat-window>
-        </v-flex>
-        <v-flex lg6 sm12 xs12>
+        </v-flex> -->
+        <!-- <v-flex lg6 sm12 xs12>
           <v-widget title="Activities" contentBg="white">
             <div slot="widget-content">
               <ol class="timeline timeline-activity timeline-point-sm timeline-content-right">
@@ -186,13 +186,13 @@
               </ol>              
             </div>
           </v-widget>          
-        </v-flex>
-        <v-flex lg7 sm12 xs12>
+        </v-flex> -->
+        <!-- <v-flex lg7 sm12 xs12>
           <plain-table></plain-table>
         </v-flex>
         <v-flex lg5 sm12 xs12>
           <plain-table-order></plain-table-order>
-        </v-flex>               
+        </v-flex>                -->
       </v-layout>
     </v-container>
   </div>
@@ -312,13 +312,13 @@ export default {
         subheading: 'Issues',
         headline: '100%',
         caption: 'issues fixed.',
-        percent: 100,
+        percent: 95,
         icon: {
           label: 'bug_report',
           color: 'primary'
         },
         linear: {
-          value: 100,
+          value: 95,
           color: 'error'
         }
       },        

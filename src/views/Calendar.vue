@@ -33,11 +33,13 @@ export default {
       }
     
     ],
-
+  config: {
+    defaultView: "agendaWeek",
+    eventRender: function(event, element) {
+      console.log(event);
+      }
+    }
   }),
-
-
-  
   methods: {
     handleDayClick (day, e) {
       this.dialog = true;

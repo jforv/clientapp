@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-toolbar card dense color="transparent">
-      <v-toolbar-title><h4>Project</h4></v-toolbar-title>
+      <v-toolbar-title><h4>Patient List</h4></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
@@ -9,7 +9,7 @@
     </v-toolbar>
     <v-divider></v-divider>
     <v-card-text class="pa-0">
-      <template>
+      <template slot="items" slot-scope="props">
         <v-data-table
           :headers="headers"
           :items="projects"
@@ -17,6 +17,7 @@
           class="elevation-0"
         >
           <template slot="items" slot-scope="props">
+            <tr @click="props.expanded = !props.expanded">
             <td>
               <v-avatar size="36px">
                 <img :src="props.item.avatar" :alt="props.item.username" />
@@ -33,7 +34,13 @@
                 <v-icon>delete</v-icon>
               </v-btn>
             </td>
+            </tr>
           </template>
+          <template slot="expand">
+      <v-card flat>
+        <v-card-text>Historial va aqui</v-card-text>
+      </v-card>
+    </template>
         </v-data-table>
       </template>
       <v-divider></v-divider>
@@ -72,3 +79,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+.pa-0{
+  margin: 50px;
+  padding: 50px;
+}
+</style>

@@ -1,26 +1,26 @@
 import { getUser as User } from './user';
 // chat menu
 const Menu = [
-  { 
-    text: 'Chat',
-    icon: 'chat',
-    to: { path: '/chat/messaging' },
-  },
-  { 
-    text: 'Contacts',
-    icon: 'contacts',
-    to: { path: '/chat/contact' },
-  },
-  { 
-    text: 'File',
-    icon: 'insert_drive_file',
-    to: { path: '/chat/media' },
-  },
-  { 
-    text: 'Settings',
-    icon: 'settings',
-    to: { path: '/chat/settings' },
-  },
+  // { 
+  //   text: 'Chat',
+  //   icon: 'chat',
+  //   to: { path: '/chat/messaging' },
+  // },
+  // { 
+  //   text: 'Contacts',
+  //   icon: 'contacts',
+  //   to: { path: '/chat/contact' },
+  // },
+  // { 
+  //   text: 'File',
+  //   icon: 'insert_drive_file',
+  //   to: { path: '/chat/media' },
+  // },
+  // { 
+  //   text: 'Settings',
+  //   icon: 'settings',
+  //   to: { path: '/chat/settings' },
+  // },
 
 ];
 // chat group
@@ -483,9 +483,9 @@ Groups.map((item) => {
 });
 
 // get chat group
-const getChatById = (uuid) => {
-  return (uuid !== undefined) ? Groups.find(x => x.uuid === uuid) : Groups[0];
-};
+// const getChatById = (uuid) => {
+//   return (uuid !== undefined) ? Groups.find(x => x.uuid === uuid) : Groups[0];
+// };
 
 export {
   Menu,
