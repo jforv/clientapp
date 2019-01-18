@@ -89,7 +89,7 @@ export default [
     props: (route) => ({ type: route.query.type }),
     component: () => import(
       /* webpackChunkName: "routes" */
-      `@/components/widgets/list/PlainTable.vue`
+      `@/views/Patients.vue`
     )
   },
   {

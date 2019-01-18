@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-toolbar card dense color="transparent">
-      <v-toolbar-title><h4>Patient List</h4></v-toolbar-title>
+      <v-toolbar-title><h4>Project</h4></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
@@ -9,7 +9,7 @@
     </v-toolbar>
     <v-divider></v-divider>
     <v-card-text class="pa-0">
-      <template slot="items" slot-scope="props">
+      <template>
         <v-data-table
           :headers="headers"
           :items="projects"
@@ -17,7 +17,6 @@
           class="elevation-0"
         >
           <template slot="items" slot-scope="props">
-            <tr @click="props.expanded = !props.expanded">
             <td>
               <v-avatar size="36px">
                 <img :src="props.item.avatar" :alt="props.item.username" />
@@ -34,23 +33,37 @@
                 <v-icon>delete</v-icon>
               </v-btn>
             </td>
-            </tr>
           </template>
-          <template slot="expand">
-      <v-card flat>
-        <v-card-text>Historial va aqui</v-card-text>
-      </v-card>
-    </template>
         </v-data-table>
       </template>
       <v-divider></v-divider>
+      <v-btn
+      fab
+      bottom
+      right
+      color="blue"
+      dark
+      fixed
+      @click="dialog = !dialog"
+    >
+      <v-icon>add</v-icon>
+    </v-btn>
     </v-card-text>
+    <v-dialog v-model="dialog" width="650">
+        <event-form ref="eForm" v-bind="dialogData"></event-form>
+      </v-dialog>  
   </v-card>
 </template>
 
 <script>
 import { Projects } from '@/api/project';
+import EventForm from '../components/widgets/form/EventForm';
+import VModal from '@/components/Modals'
 export default {
+  components:{
+    VModal,
+    EventForm
+  },
   data () {
     return {
       headers: [
@@ -68,7 +81,6 @@ export default {
         { text: 'Deadline', value: 'deadline' },
         { text: 'Progress', value: 'progress' },
         { text: 'Action', value: 'action', align: 'right' },
-
       ],
     };
   },
@@ -79,9 +91,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.pa-0{
-  margin: 50px;
-  padding: 50px;
-}
-</style>
