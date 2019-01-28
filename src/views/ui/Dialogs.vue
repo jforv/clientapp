@@ -179,6 +179,7 @@
 
 <script>
 import VWidget from '@/components/VWidget';
+import EventForm from '@/components/widgets/form/EventForm'
 export default {
   components: {
     VWidget
